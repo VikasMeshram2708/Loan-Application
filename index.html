@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <!-- Form Title -->
+      <h1>Loan Application</h1>
+    </div>
+
+    <!-- loan form structure -->
+    <!-- name area -->
+    <div class="form">
+      <form id="loanForm">
+        <div class="nameStuff">
+          <label for="name">Name</label>
+          <input required type="text" name="name" id="name" minlength="4" />
+        </div>
+
+        <!-- Email area -->
+        <div class="nameStuff">
+          <label for="email">Email</label>
+          <input required type="email" name="email" id="email" />
+        </div>
+
+        <!-- PAN area -->
+        <div class="panStuff">
+          <label for="pan">PAN</label>
+          <input required type="text" pattern="[A-Z0-9]+" name="pan" id="pan" />
+        </div>
+
+        <!-- Loan Amount area -->
+        <div class="loanStuff">
+          <label for="loanAmount"
+            >Loan Amount
+            <span>(Upto 9 Digits Maximum)</span>
+          </label>
+          <input
+            style="text-transform: uppercase"
+            required
+            type="number"
+            pattern="[0-9]+"
+            name="loanAmount"
+            max="999999999"
+            min="1"
+            id="loanAmount"
+          />
+        </div>
+
+        <!-- captcha box -->
+        <div class="captchaBox">
+          <h1>Captcha:</h1>
+          <!-- math elements -->
+          <div class="mathElement">
+            <label for="mathElement" id="elements">
+              <!-- we will replace this in javascrpipt file using .innerHTML -->
+              <span class="firstNumber">X</span>
+              <!-- same here -->
+              <span>+</span>
+              <!-- here also we are going to change the value -->
+              <span class="secondNumber">Y</span>
+            </label>
+            <input
+              id="answer"
+              required
+              type="mathElementInsert"
+              placeholder="enter the answer"
+            />
+          </div>
+        </div>
+
+        <!-- submit button -->
+        <div class="submitButton">
+          <button class="submitBtn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+* {
+  /* My default settings */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  background-color: black;
+  color: lightgreen;
+}
+
+/* the thankyou title in Thankyou page */
+.title {
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* inside field of the OTP div */
+.OTPfield {
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 3em;
+}
+
+/* alligning the div to settle in center postion */
+.verifyOTP {
+  text-align: center;
+}
+
+.otpVerify {
+  padding: 0.2em;
+  text-align: center;
+  font-size: 2.3em;
+  width: 50%;
+}
+
+/* button main div */
+.button {
+  margin-top: 3.3em;
+  text-align: center;
+}
+
+/* button fields */
+#otpBtn {
+  cursor: pointer;
+  border-radius: 3em;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding: 1.2em;
+  width: 50%;
+  margin: auto;
+}
+
+/* dear user data formatting */
+.data {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+}

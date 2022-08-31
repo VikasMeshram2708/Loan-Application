@@ -1,0 +1,58 @@
+* {
+  /* My default settings */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: lightgreen;
+  /* font-family: anonymous-pro; */
+}
+
+/* title div -> Loan Application */
+.title {
+  margin: 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* the form div */
+.form {
+  margin: auto;
+  width: 70%;
+}
+
+/* all label fields of form */
+label {
+  font-size: 2.2em;
+}
+
+/* all the input fields of form */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  font-size: 1.5em;
+  border: none;
+  background: white;
+  color: black;
+}
+
+/* captcha div setting */
+.captchaBox {
+  display: flex;
+}
+.mathElement {
+  display: flex;
+}
+#elements {
+  width: 50%;
+}
+
+/* submit button */
+button {
+  font-size: 1.5em;
+  width: 100%;
+  padding: 0.5em;
+  cursor: pointer;
+}
